@@ -35,4 +35,7 @@ func BannerPrintMethod() {
 	println("[ 11 ]" + cyan.Sprint(" Проверка IP на BlackList          [1x]"))
 	println("[ 12 ]" + cyan.Sprint(" Анализ MAC-Адреса                 [1x]"))
 	println("[ 13 ]" + cyan.Sprint(" Анализ Карты                      [1x]"))
+	println("[ 14 ]" + cyan.Sprint(" SSL Анализ                        [1x]"))
+	println("[ 15 ]" + cyan.Sprint(" Информация о моем IP              [1x]"))
+	println("[ 16 ]" + cyan.Sprint(" Декодер кординат	               [1x]"))
 }

@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"os"
+	"strconv"
 	"strings"
 
 	"src/utils/cli"
@@ -234,6 +235,57 @@ func main() {
 			reg := scanner.Text()
 
 			module.ValidateCardMethod(reg)
+
+			white.Printf("%s > Нажмите Enter для продолжения...",
+				cyan.Sprint("String-Free"),
+			)
+			scanner.Scan()
+
+		case "14":
+
+			white.Printf("%s > Введите Домен > ",
+				cyan.Sprint("String-Free"),
+			)
+
+			scanner.Scan()
+			reg := scanner.Text()
+
+			module.SSLorTSLCheckMethod(reg)
+
+			white.Printf("%s > Нажмите Enter для продолжения...",
+				cyan.Sprint("String-Free"),
+			)
+			scanner.Scan()
+
+		case "15":
+
+			module.InfoMyIPMethod()
+
+			white.Printf("%s > Нажмите Enter для продолжения...",
+				cyan.Sprint("String-Free"),
+			)
+			scanner.Scan()
+
+		case "16":
+
+			white.Printf("%s > Введите Широту (Lan) > ",
+				cyan.Sprint("String-Free"),
+			)
+
+			scanner.Scan()
+			lat := scanner.Text()
+
+			white.Printf("%s > Введите Долготу (Lon) > ",
+				cyan.Sprint("String-Free"),
+			)
+
+			scanner.Scan()
+			lon := scanner.Text()
+
+			lanF, _ := strconv.ParseFloat(lat, 64)
+			lonF, _ := strconv.ParseFloat(lon, 64)
+
+			module.DecoderLanLonMethod(lanF, lonF)
 
 			white.Printf("%s > Нажмите Enter для продолжения...",
 				cyan.Sprint("String-Free"),
