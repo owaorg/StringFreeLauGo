@@ -18,7 +18,7 @@ func main() {
 
 	scanner := bufio.NewScanner(os.Stdin) // Инициализируем сканер для чтения пользовательского ввода
 	white := color.New(color.FgHiWhite)   // Инициализируем цвет для белого текста
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 	module.TitleMethod() // Я так и не понял работает оно или нет, но пусть будет
 
 	cli.WelcomeBannerTextMethod() // Выводим приветственный баннер
@@ -286,6 +286,22 @@ func main() {
 			lonF, _ := strconv.ParseFloat(lon, 64)
 
 			module.DecoderLanLonMethod(lanF, lonF)
+
+			white.Printf("%s > Нажмите Enter для продолжения...",
+				cyan.Sprint("String-Free"),
+			)
+			scanner.Scan()
+
+		case "17":
+
+			white.Printf("%s > Введите ФИО > ",
+				cyan.Sprint("String-Free"),
+			)
+
+			scanner.Scan()
+			reg := scanner.Text()
+
+			module.SearchFioMethod(reg)
 
 			white.Printf("%s > Нажмите Enter для продолжения...",
 				cyan.Sprint("String-Free"),

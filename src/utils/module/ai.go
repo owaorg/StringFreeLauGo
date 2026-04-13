@@ -20,7 +20,7 @@ type AIResponse struct {
 
 func AIRequestMethod(prompt string, data interface{}) {
 
-	cyan := color.New(color.FgHiCyan)
+	cyan := color.New(color.FgHiBlack)
 
 	payload, _ := json.Marshal(map[string]interface{}{
 		"model": "deepseek/deepseek-chat",

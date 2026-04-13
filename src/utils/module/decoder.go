@@ -16,7 +16,7 @@ type SortInfoDecoder struct {
 func DecoderLanLonMethod(lans float64, lons float64) {
 	white := color.New(color.FgWhite)
 	red := color.New(color.FgRed)
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 
 	urls := fmt.Sprintf("https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=%f&lon=%f", lans, lons)
 

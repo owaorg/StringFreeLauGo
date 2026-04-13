@@ -20,7 +20,7 @@ type SortResponseApiCheckBlackListGudamFuckPaketLOX struct {
 }
 
 func CheckBlacklist(ip string) {
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 	red := color.New(color.FgRed)
 	white := color.New(color.FgWhite)
 

@@ -19,7 +19,7 @@ type MacInfo struct {
 }
 
 func MacAdressAnalyzeMethod(mac string) {
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 	red := color.New(color.FgRed)
 	white := color.New(color.FgWhite)
 

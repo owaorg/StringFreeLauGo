@@ -17,7 +17,7 @@ type DNSRecord struct {
 }
 
 func DnsAnalyzeMethod(domen string) {
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 	red := color.New(color.FgRed)
 
 	url := "https://heimdal.techviral.video/dns/records"

@@ -24,7 +24,7 @@ type SortInfoIP struct {
 
 func SearchFreeApiMethod(number string) {
 
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 	//lightBlack := color.New(color.FgHiBlack)
 
 	response, _ := http.Get("http://num.voxlink.ru/get/?num=+" + fmt.Sprint(number))

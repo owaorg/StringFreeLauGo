@@ -35,7 +35,7 @@ func InfoMyIPMethod() {
 
 	white := color.New(color.FgWhite)
 	red := color.New(color.FgRed)
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 
 	var url string = "https://heimdal.techviral.video/ip/my-ip"
 	response, err := http.Get(url)

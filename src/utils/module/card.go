@@ -18,7 +18,7 @@ func ValidateCardMethod(card string) {
 
 	var turl string = "https://www.freecodeformat.com/credit-card-validator.php"
 
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 	red := color.New(color.FgRed)
 	white := color.New(color.FgWhite)
 

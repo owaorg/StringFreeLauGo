@@ -41,7 +41,7 @@ func SSLorTSLCheckMethod(owaqx string) {
 
 	white := color.New(color.FgWhite)
 	red := color.New(color.FgRed)
-	cyan := color.New(color.FgCyan)
+	cyan := color.New(color.FgHiBlack)
 
 	var url string = "https://heimdal.techviral.video/tools/ssl/check"
 	var json4ik string = fmt.Sprintf(`{"domain": "%s", "port": 443}`, owaqx)
